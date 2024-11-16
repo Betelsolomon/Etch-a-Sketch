@@ -15,3 +15,18 @@ function creatGrid(size){
  }
  creatGrid(16);
 
+ function newGrid(){
+    const newSize = parseInt(prompt("enter the amount of squares in one side"));
+    if (newSize < 100) {
+        creatGrid(newSize);
+        
+    }
+    else{
+        alert("square size should be max of 100");
+    }
+}
+resizeButton.addEventListener("click",newGrid);
+
+
+
+
